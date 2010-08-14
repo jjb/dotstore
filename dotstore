@@ -1,0 +1,37 @@
+#! /usr/bin/env ruby
+require 'fileutils'
+
+home_dir = File.expand_path('~') + '/'
+dotstore_dir = home_dir + '.dotstore/'
+
+unless File.exists?(dotstore_dir)
+  print "#{home_dir}.dotstore does not exist.\n"
+  exit
+end
+
+
+Dir.foreach(dotstore_dir) do |f|
+  next if ['.', '..', '.git'].include?(f)
+  next unless f.match( /^\./ ) # dotfiles only
+  puts "\n== #{f} =="
+  file   = dotstore_dir + f
+  target = home_dir + f
+
+  if File.symlink? target
+    if file == File.readlink(target)
+      puts "  #{f} is already dotstorified!"
+    else
+      puts "  ERROR: #{f} is symlinked elsewhere, we're not changing it!"
+    end
+    next
+  end
+
+  if File.exists?(target)
+    backup = f + '-' + Time.now.to_i.to_s
+    puts "  #{f} exists. Backing it up to #{backup}"
+    FileUtils.mv( target, home_dir + backup )
+  end
+
+  puts "  dotstorifying #{f}\n"
+  File.symlink(file, target)
+end
