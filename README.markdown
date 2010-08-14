@@ -13,23 +13,23 @@ Something like:
  1. Keep your dotfiles in a git repository (or any repository, or any directory, maybe synched with dropbox) in .dotstore. If you are on OS X, maybe you want to use mine:
    `git clone http://github.com/jjb/dotfiles.git .dotfiles`
  2. `dotstore` 
-  > ➔ ./dotstore 
-  > 
-  > == .bash_profile ==
-  > .bash_profile exists. Backing it up to .bash_profile-1281762101
-  > dotstorifying .bash_profile
-  > 
-  > == .bashrc ==
-  > .bashrc exists. Backing it up to .bashrc-1281762101
-  > dotstorifying .bashrc
-  > 
-  > == .irbrc ==
-  > .irbrc exists. Backing it up to .irbrc-1281762101
-  > dotstorifying .irbrc
-  > 
-  > == .zshrc ==
-  > .zshrc exists. Backing it up to .zshrc-1281762101
-  > dotstorifying .zshrc
+    ➔ ./dotstore 
+    
+    == .bash_profile ==
+    .bash_profile exists. Backing it up to .bash_profile-1281762101
+    dotstorifying .bash_profile
+    
+    == .bashrc ==
+    .bashrc exists. Backing it up to .bashrc-1281762101
+    dotstorifying .bashrc
+    
+    == .irbrc ==
+    .irbrc exists. Backing it up to .irbrc-1281762101
+    dotstorifying .irbrc
+    
+    == .zshrc ==
+    .zshrc exists. Backing it up to .zshrc-1281762101
+    dotstorifying .zshrc
 
 ## Notes
  1. symlinks will only be created for dot files. non-dot files in .dotstore will be ignored.
