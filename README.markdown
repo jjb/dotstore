@@ -10,7 +10,7 @@ Something like:
 
 ## Usage
 
-1.  Keep your dotfiles in a git repository (or any repository, or any directory, maybe synched with dropbox) in .dotstore. If you are on OS X, maybe you want to use mine:
+1.  Keep your dotfiles in a git repository (or any repository, or any directory, maybe synched with dropbox) in .dotstore. Here's how I would initiate mine in a new environment:
         git clone http://github.com/jjb/dotfiles.git .dotfiles
 2.  `dotstore` 
         ➔ ./dotstore 
