@@ -12,8 +12,8 @@ Something like:
 
 1.  Keep your dotfiles in a git repository (or any repository, or any directory, maybe synched with dropbox) in .dotstore. Here's how I would initiate mine in a new environment:
         git clone http://github.com/jjb/dotfiles.git .dotfiles
-2.  `dotstore` 
-        ➔ ./dotstore 
+2.  run `dotstore` 
+        ➔ dotstore 
 
         == .bash_profile ==
         .bash_profile exists. Backing it up to .bash_profile-1281762101
