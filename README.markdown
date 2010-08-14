@@ -1,4 +1,4 @@
-dotfiles is an easy way to keep your dotfiles in synch between computers, using git for all the things that make sense to use git for, and scripts for the rest.
+dotstore is an easy way to keep your dotfiles in synch between computers, using git for all the things that make sense to use git for, and scripts for the rest.
 
 ## Installation
 
