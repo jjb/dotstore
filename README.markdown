@@ -11,7 +11,7 @@ Something like:
 ## Usage
 
 1.  Keep your dotfiles in a git repository (or any repository, or any directory, maybe synched with dropbox) in .dotstore. Here's how I would initiate mine in a new environment:
-        git clone http://github.com/jjb/dotfiles.git .dotfiles
+        git clone http://github.com/jjb/dotfiles.git .dotstore
 2.  run `dotstore` 
         ➔ dotstore 
 
