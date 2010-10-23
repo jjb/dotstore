@@ -4,9 +4,11 @@ dotstore is an easy way to keep your dotfiles in synch between computers, using 
 
 Something like:
 
-1.  git clone http://github.com/jjb/dotstore.git
-2.  ln -s dotstore/dotstore ~/bin/dotstore
-3.  chmod 755 ~/bin/dotstore
+1.  cd ~/src
+2.  git clone http://github.com/jjb/dotstore.git
+3.  cd ~/bin
+4.  ln -s ~/src/dotstore/dotstore .
+5.  chmod 755 dotstore
 
 ## Usage
 
