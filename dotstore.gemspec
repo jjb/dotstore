@@ -8,10 +8,11 @@ Gem::Specification.new do |s|
 
   s.authors           = ['John Joseph Bachir']
   s.email             = 'j@jjb.cc'
-  s.rubyforge_project = 'dotstore'
 
   s.require_path      = '.'
   s.executables       = ['dotstore']
 
-  s.has_rdoc          = false
+  s.required_ruby_version = Gem::Requirement.new(">= 2.0.0")
+
+  s.license = "MIT"
 end
