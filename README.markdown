@@ -37,3 +37,10 @@ dotstore is an easy way to keep your dotfiles in sync between computers, using g
 
 ## Future
 1. a command to seamlessly add existing dot files to the .dotstore directory.
+
+# publishing gem
+
+```sh
+gem build dotstore.gemspec
+gem push dotstore-1.0.0.gem
+```
