@@ -26,7 +26,7 @@ Dir.foreach(dotstore_dir) do |f|
     next
   end
 
-  if File.exists?(target)
+  if File.exist?(target)
     backup = f + '-' + Time.now.to_i.to_s
     puts "  #{f} exists. Backing it up to #{backup}"
     FileUtils.mv( target, home_dir + backup )
