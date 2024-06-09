@@ -4,7 +4,7 @@ require 'fileutils'
 home_dir = File.expand_path('~') + '/'
 dotstore_dir = home_dir + '.dotstore/'
 
-unless File.exists?(dotstore_dir)
+unless File.exist?(dotstore_dir)
   print "#{home_dir}.dotstore does not exist.\n"
   exit
 end
