@@ -1,7 +1,6 @@
 Gem::Specification.new do |s|
   s.name      = 'dotstore'
-  s.version   = '1.0.1'
-  s.date      = '2010-12-10'
+  s.version   = '1.0.2'
 
   s.homepage    = "https://github.com/jjb/dotstore/"
   s.summary     = "dotstore is an easy way to keep your dotfiles in sync between computers, using git for all the things that make sense to use git for, and scripts for the rest."
