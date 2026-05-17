@@ -32,9 +32,9 @@ dotstore is an easy way to keep your dotfiles in sync between computers, using g
 ## Notes
 1. Symlinks will only be created for dot files. non-dot files in .dotstore will be ignored.
 2. Therefore, you can keep any other flat files or directories in .dotstore and they will be ignored.
-   For example, [my dot files](http://github.com/jjb/dotfiles) refer to other files in a directory tree in .dotfiles.
-3. Existing files in your home directory are backed up. Existing symlinks to .dotfiles or anywhere else are ignored.
-4. You can keep dot directories in .dotfiles as well, they will be managed the same as files.
+   For example, [my dot files](http://github.com/jjb/dotfiles) refer to other files in a directory tree in .dotstore.
+3. Existing files in your home directory are backed up. Existing symlinks to .dotstore or anywhere else are ignored.
+4. You can keep dot directories in .dotstore as well, they will be managed the same as files.
    (I don't have any applications that use dot directories however, so I've only done simple tests for this)
 
 ## Future
